@@ -1,5 +1,5 @@
 {
-    "name": "j0k3r/php-imgur-api-client",
+    "name": "moeplhausen/php-imgur",
     "replace": {
         "adyg/php-imgur-api-client": "self.version"
     },
