@@ -3,6 +3,7 @@
 namespace Imgur\Api;
 
 use Imgur\Exception\ErrorException;
+use Imgur\Exception\RuntimeException;
 
 /**
  * This is a special endpoint.
@@ -26,6 +27,9 @@ class AlbumOrImage extends AbstractApi
             if (false === strpos($e->getMessage(), 'Unable to find an image with the id')) {
                 throw $e;
             }
+        }
+        catch (RuntimeException $e){
+
         }
 
         try {
